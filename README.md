@@ -25,13 +25,13 @@ class Demo extends Component{
 
 ## API
 API名 | 类型 | 说明
-- | :-: | -:
+-     | :-: | -
 getContent | Function| 用来获取markdown组件的文本内容
 
 
 ## 效果图
 
-![实际项目应用图]('source/1.png')
-![全屏编辑]('source/2.png')
-![全屏预览]('source/3.png')
-![全屏编辑和预览]('source/4.png')
+![实际项目应用图](/source/1.png)
+![全屏编辑](/source/2.png)
+![全屏预览](/source/3.png)
+![全屏编辑和预览](/source/4.png)
