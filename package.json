@@ -1,0 +1,19 @@
+{
+  "name": "react-mini-markdown",
+  "version": "1.0.0",
+  "description": "一个react简洁小巧的markdown组件",
+  "main": "./markdown/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luoanyang/react-mini-markdown.git"
+  },
+  "author": "1398633077@qq.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luoanyang/react-mini-markdown/issues"
+  },
+  "homepage": "https://github.com/luoanyang/react-mini-markdown#readme"
+}

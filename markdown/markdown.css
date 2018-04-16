@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+.markdown-wrap {
+  width: 100%;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.markdown-wrap .markdown-head {
+  border-bottom: 1px solid #d9d9d9;
+  overflow: hidden;
+}
+
+.markdown-wrap .markdown-head ul.left {
+  margin-bottom: 0;
+  width: 50%;
+  float: left;
+}
+
+.markdown-wrap .markdown-head ul.right {
+  border-left: 1px solid #d9d9d9;
+  margin-bottom: 0;
+  width: 50%;
+  float: left;
+}
+
+.markdown-wrap .markdown-head ul li {
+  text-align: center;
+  float: left;
+  width: 10%;
+  list-style: none;
+}
+
+.markdown-wrap .markdown-head ul.right li {
+  float: right;
+}
+
+.markdown-wrap .markdown-head ul li i {
+  cursor: pointer;
+}
+
+.markdown-body {
+  height: 400px;
+  position: relative;
+}
+
+.markdown-body .markdown-edit-wrap,
+.markdown-body .markdown-show-wrap {
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+  transition: all .4s;
+  position: absolute;
+  top: 0;
+}
+
+.markdown-body .markdown-show-wrap {
+  border-left: 1px solid #d9d9d9;
+  background: #f9f9f9;
+  overflow: auto;;
+  right: 0;
+}
+
+.markdown-body .markdown-edit-wrap textarea {
+  border: none;
+  height: 100%;
+  width: 100%;
+  resize: none;
+}
+
+.clicked {
+  color: #1890ff;
+}
+
+.markdown-expand {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9999;
+}
+
+.markdown-expand .markdown-body {
+  height: calc(100% - 40px);
+}
+
+.markdown-body.markdown-pen .markdown-edit-wrap {
+  width: 0%;
+  z-index: -1;
+}
+
+.markdown-body.markdown-pen .markdown-show-wrap {
+  width: 100%;
+  border: none;
+}
+
+.markdown-body.markdown-eye .markdown-edit-wrap {
+  width: 100%;
+}
+
+.markdown-body.markdown-eye .markdown-show-wrap {
+  width: 0%;
+  z-index: -1;
+}
