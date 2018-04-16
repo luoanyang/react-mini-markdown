@@ -24,8 +24,9 @@ class Demo extends Component{
 ```
 
 ## API
-因为这是一个简洁小巧的就只有一个接口。
-**getContent**,用来获取markdown组件的文本内容。
+API名 | 类型 | 说明
+- | :-: | -:
+getContent | Function| 用来获取markdown组件的文本内容
 
 
 ## 效果图
