@@ -26,7 +26,7 @@ class Demo extends Component{
 ## API
 API名 | 类型 | 说明
 -|:-:|-
-getContent | Function| 用来获取markdown组件的文本内容
+**getContent** | Function| 用来获取markdown组件的文本内容
 
 
 ## 效果图
