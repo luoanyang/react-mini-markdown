@@ -5,7 +5,7 @@ import React, {Component} from 'react';
 import marked from 'marked';
 
 class MarkDown extends Component {
-  constructor(props) {
+  constructor(props){
     super(props)
     this.state = {
       markdownText: '',
@@ -13,19 +13,34 @@ class MarkDown extends Component {
       editFlag: '2'
     };
     this.getContent = this.props.getContent || '';
+    this._changeEditFlag = this._changeEditFlag.bind(this);
+    this._textChange = this._textChange.bind(this);
+    this._textChange = this._textChange.bind(this);
+    this._addText = this._addText.bind(this);
+    this._title = this._title.bind(this);
+    this._bold = this._bold.bind(this);
+    this._italic = this._italic.bind(this);
+    this._quote = this._quote.bind(this);
+    this._orderedList = this._orderedList.bind(this);
+    this._deorderedList = this._deorderedList.bind(this);
+    this._link = this._link.bind(this);
+    this._image = this._image.bind(this);
+    this._code = this._code.bind(this);
+    this._table = this._table.bind(this);
+    this._expand = this._expand.bind(this);
   }
 
-  componentDidMount() {
+  componentDidMount(){
     this.text = document.getElementById('mk-textarea');
   }
 
-  _changeEditFlag = (e) => {
+  _changeEditFlag(e){
     this.setState({
       editFlag: e.currentTarget.dataset.number
     })
   }
 
-  _textChange = (e) => {
+  _textChange(e){
     let target = e.currentTarget;
     this.setState({
       markdownText: target.value
@@ -33,7 +48,7 @@ class MarkDown extends Component {
     this.getContent(target.value);
   };
 
-  _addText = (text) => {
+  _addText(text){
     let textArr = this.text.value.split('');
     textArr.splice(this.text.selectionStart, 0, text).join('');
     this.text.value = textArr.join('');
@@ -44,63 +59,63 @@ class MarkDown extends Component {
     this.getContent(this.text.value);
   };
 
-  _title = () => {
+  _title(){
     let html = '## 标题';
     this._addText(html);
   };
 
-  _bold = () => {
+  _bold(){
     let html = '**加粗**';
     this._addText(html);
   };
 
-  _italic = () => {
+  _italic(){
     let html = '*斜体*';
     this._addText(html);
   };
 
-  _quote = () => {
+  _quote(){
     let html = '> 引用';
     this._addText(html);
   };
 
-  _orderedList = () => {
+  _orderedList(){
     let html = '1. 有序列表\n2. 有序列表';
     this._addText(html);
   };
 
-  _deorderedList = () => {
+  _deorderedList(){
     let html = '- 无序列表\n- 无序列表';
     this._addText(html);
   };
 
-  _link = () => {
+  _link(){
     let html = '[标题](链接)';
     this._addText(html);
   };
 
-  _image = () => {
+  _image(){
     let html = '![标题](链接)';
     this._addText(html);
   };
 
-  _code = () => {
+  _code(){
     let html = '```\n代码 \n```';
     this._addText(html);
   };
 
-  _table = () => {
+  _table(){
     let html = `表头1 | 表头1 | 表头1\n- | :-: | -:\n内容1 | 内容2| 内容3\n内容1 | 内容2| 内容3\n内容1 | 内容2| 内容3`;
     this._addText(html);
   }
 
-  _expand = () => {
+  _expand(){
     this.setState({
       expandFlag: !this.state.expandFlag
     })
   }
 
-  render() {
+  render(){
     return (
       <div className={`markdown-wrap ${ this.state.expandFlag ? 'markdown-expand' : ''}`}>
         <div className="markdown-head">

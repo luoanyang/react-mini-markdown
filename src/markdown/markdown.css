@@ -24,6 +24,12 @@
   overflow: hidden;
 }
 
+.markdown-wrap .markdown-head ul{
+  padding: 8.5px 0 ;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 .markdown-wrap .markdown-head ul.left {
   margin-bottom: 0;
   width: 50%;
@@ -66,6 +72,7 @@
   transition: all .4s;
   position: absolute;
   top: 0;
+  text-align: left !important;
 }
 
 .markdown-body .markdown-show-wrap {
