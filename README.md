@@ -18,7 +18,7 @@ class Demo extends Component{
   }
   render(){
     return(
-      <Markdown getContent={this.getMarkDownContent}/>
+      <Markdown getContent={this.getMarkDownContent} initContent='初始内容'/>
     )
   }
 }
