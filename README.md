@@ -28,6 +28,7 @@ class Demo extends Component{
 API名 | 类型 | 说明
 -|:-:|-
 **getContent** | Function(arg)| 用来获取markdown组件的文本内容,**arg**为markdown的文本内容
+**initContent** | String| 用来初始化markdown组件的文本内容
 
 
 ## 效果图
