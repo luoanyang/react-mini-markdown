@@ -24,12 +24,13 @@
   overflow: hidden;
 }
 
-.markdown-wrap .markdown-head ul{
-  padding: 8.5px 0 ;
+.markdown-wrap .markdown-head ul {
+  padding: 8.5px 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 .markdown-wrap .markdown-head ul.left {
   margin-bottom: 0;
   width: 50%;
@@ -80,6 +81,10 @@
   background: #f9f9f9;
   overflow: auto;;
   right: 0;
+}
+
+.markdown-body .markdown-edit-wrap {
+  background: #fff;
 }
 
 .markdown-body .markdown-edit-wrap textarea {

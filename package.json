@@ -1,6 +1,6 @@
 {
   "name": "react-mini-markdown",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "一个react简洁小巧的markdown组件",
   "files": [
     "dist"
