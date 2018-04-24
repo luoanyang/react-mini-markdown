@@ -2,7 +2,7 @@
 一个react的简洁小巧的markdown组件
 
 ## 使用
-1.下载react-mini-markdown, **请下载最新版本**
+1.下载react-mini-markdown, **如出现bug，请下载最新版本**
 ```
 npm install react-mini-markdown --save
 ```
