@@ -29,6 +29,15 @@ class MarkDown extends Component {
     this._code = this._code.bind(this);
     this._table = this._table.bind(this);
     this._expand = this._expand.bind(this);
+    this.setContent = this.setContent.bind(this);
+  }
+
+  setContent(content) {
+    let text = content || '';
+    this.text.value = text;
+    this.setState({
+      markdownText: text
+    })
   }
 
   componentDidMount() {
@@ -50,7 +59,7 @@ class MarkDown extends Component {
       markdownText: target.value
     });
     this.getContent(target.value);
-  };
+  }
 
   _addText(text) {
     let textArr = this.text.value.split('');
